@@ -32,12 +32,5 @@ Sendo um projeto estático, a execução é simples e não requer servidores com
    # Com Node.js
    npx http-server
 ```
-
-## 🔮 Próximos Passos (Roadmap Backend)
-Este projeto é uma base. Para evoluir a arquitetura, os próximos passos incluem:
-- [ ] Migrar o conteúdo estático (notícias/críticas) para um ficheiro `data.json`.
-- [ ] Usar **JavaScript (Fetch API)** para renderizar os dados dinamicamente no frontend.
-- [ ] Desenvolver uma API simples em **Node.js (Express)** ou **Ruby (Sinatra/Rails)** para servir os dados e gerir um futuro sistema de comentários ou avaliações.
-
 ## 📝 Licença
 Este projeto está sob a licença MIT. Sente-te à vontade para estudar e modificar.
