@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pânico 7: A Franquia Perde o Rumo | CineHouse</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        /* Correção local para a imagem da capa */
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,9 +22,7 @@
         <div class="header-inner">
             <div class="header-spacer"></div>
             <div class="logo"><a href="index.html">CineHouse</a></div>
-            <div class="header-spacer right">
-                <button class="btn-follow">Subscrever</button>
-            </div>
+            <div class="header-spacer right"></div>
         </div>
         <nav class="main-nav">
             <a href="#">Estreias</a>
@@ -30,7 +37,7 @@
     <!-- MAIN CONTENT -->
     <main class="content-grid">
         
-        <!-- SIDEBAR ESQUERDA (Popular) -->
+        <!-- SIDEBAR ESQUERDA -->
         <aside class="sidebar-left">
             <div class="sidebar-tabs">
                 <span class="tab">Populares</span>
@@ -43,13 +50,10 @@
             </ul>
         </aside>
 
-        <!-- CONTEÚDO CENTRAL (Artigo) -->
+        <!-- CONTEÚDO CENTRAL -->
         <article class="featured-story">
-            <!-- PLACEHOLDER DA IMAGEM DA CAPA -->
-            <div class="featured-image">
-                <!-- Substitui este comentário pela tua tag img real: 
-                <img src="caminho/para/panico7.jpg" alt="Capa de Pânico 7" style="width:100%; height:100%; object-fit:cover;"> -->
-                <span style="display:flex; align-items:center; justify-content:center; height:100%; color:white;">[Imagem da Capa do Filme Aqui]</span>
+            <div class="featured-image"> 
+                <img src="panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
             </div>
             
             <div class="eyebrow">Críticas</div>
@@ -63,7 +67,7 @@
             </div>
         </article>
 
-        <!-- SIDEBAR DIREITA (Secundárias) -->
+        <!-- SIDEBAR DIREITA -->
         <aside class="sidebar-right">
             <div class="secondary-story">
                 <div class="secondary-image"></div>
@@ -84,4 +88,7 @@
     <!-- FOOTER -->
     <footer class="site-footer">
         <p>© 2026 CineHouse</p>
-   
+    </footer>
+
+</body>
+</html>
