@@ -23,11 +23,10 @@
     </nav>
   </header>
 
-  <!-- BARRA DE DESTAQUE COM LINK PARA O ARTIGO -->
   <div class="trending-bar">
     <span class="trending-label">Em destaque</span>
     <a href="../noticias/Panico7.html"><b>Crítica: Pânico 7 entra na lista dos piores de 2026</b></a>
-    <a href="#">Título da notícia em destaque dois</a>
+    <a href="../noticias/Supergirl.html"><strong>Crítica: Supergirl entra na lista dos piores de 2026</strong></a>
     <a href="#">Título da notícia em destaque três</a>
   </div>
 
@@ -45,7 +44,7 @@
         </li>
         <li>
           <span class="rank">2</span>
-          <span class="popular-title">Título da notícia popular dois</span>
+          <a href="../noticias/Supergirl.html" class="popular-title">Supergirl: A avalanche de reclamações da DC</a>
         </li>
         <li>
           <span class="rank">3</span>
@@ -54,18 +53,32 @@
       </ol>
     </aside>
 
-    <!-- ARTIGO PRINCIPAL TAMBÉM LINKADO -->
-    <article class="featured-story">
-      <a href="../noticias/Panico7.html">
-        <div class="featured-image">
-	<img src="../noticias/panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
-	</div>
-      </a>
-      <p class="eyebrow">Críticas</p>
-      <h1><a href="../noticias/Panico7.html"><b>Pânico 7: A Franquia Perde o Rumo e Entra na Lista de Piores de 2026</a></b></h1>
-      <p class="deck">Apesar de ter batido recordes de bilheteria, a nova sequência é considerada fraquíssima pela crítica.</p>
-    </article>
+    <!-- Coluna Central: Artigos Principais empilhados -->
+    <div class="main-content">
+      <article class="featured-story">
+        <a href="../noticias/Panico7.html">
+          <div class="featured-image">
+            <img src="../noticias/panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
+          </div>
+        </a>
+        <p class="eyebrow">Críticas</p>
+        <h1><a href="../noticias/Panico7.html">Pânico 7: A Franquia Perde o Rumo e Entra na Lista de Piores de 2026</a></h1>
+        <p class="deck">Apesar de ter batido recordes de bilheteria, a nova sequência é considerada fraquíssima pela crítica.</p>
+      </article>
 
+      <article class="featured-story">
+        <a href="../noticias/Supergirl.html">
+          <div class="featured-image">
+            <img src="../noticias/supergirl.jpg" alt="Capa do filme com a atriz Milly Alcock">
+          </div>
+        </a>
+        <p class="eyebrow">Críticas</p>
+        <h2><a href="../noticias/Supergirl.html">Supergirl: A avalanche de reclamações da DC</a></h2>
+        <p class="deck">Apesar de ter batido recordes de bilheteria, o vilão principal também foi duramente atacado por outra parte dos fãs.</p>
+      </article>
+    </div>
+
+    <!-- ARTIGOS Da Direita -->
     <aside class="sidebar-right">
       <div class="secondary-story">
         <div class="secondary-image"></div>

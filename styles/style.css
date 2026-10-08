@@ -1,11 +1,11 @@
 :root {
   /* Cores do Tema Cinema */
-  --bg-wine: #2b0a0d;       /* Vermelho vinho escuro (cortina de cinema) */
-  --bg-wine-light: #3d0f13; /* Vinho ligeiramente mais claro para hovers/destaques */
-  --text-main: #f4f1ea;     /* Off-white (papel antigo) para leitura confortável */
-  --text-muted: #b0a8a9;    /* Cinza avermelhado para textos secundários */
-  --border-wine: #5c1a1e;   /* Cor das linhas divisórias */
-  --accent-red: #e63946;    /* Vermelho mais vivo para destaques (badges, botões) */
+  --bg-vinho: #2b0a0d;       /* Vermelho vinho escuro*/
+  --bg-vinho-claro: #3d0f13; /* Vinho ligeiramente mais claro para hovers/destaques */
+  --text-principal: #f4f1ea;     /* Off-white para leitura confortável */
+  --text-escuro: #b0a8a9;    /* Cinza avermelhado para textos secundários */
+  --borda-vinho: #5c1a1e;   /* Cor das linhas de baixo*/
+  --accent-vermelho: #e63946;    /* Vermelho mais vivo para destaques*/
   
   --font-serif: Georgia, "Times New Roman", Times, serif;
   --font-sans: Helvetica, Arial, sans-serif;
@@ -19,8 +19,8 @@
 
 body {
   font-family: var(--font-sans);
-  color: var(--text-main);
-  background: var(--bg-wine); /* Fundo vinho*/
+  color: var(--text-principal);
+  background: var(--bg-vinho); 
 }
 
 a {
@@ -34,11 +34,11 @@ a:hover {
   border-bottom: 1px solid currentColor;
 }
 
-/* ===== Header ===== */
+/*Header*/
 
 .site-header {
-  border-bottom: 1px solid var(--border-wine);
-  background: var(--bg-wine);
+  border-bottom: 1px solid var(--borda-vinho);
+  background: var(--bg-vinho);
 }
 
 .header-inner {
@@ -59,12 +59,12 @@ a:hover {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  color: var(--text-main);
+  color: var(--text-principal);
 }
 
 .btn-follow {
-  background: var(--accent-red);
-  color: var(--text-main);
+  background: var(--accent-vermelho);
+  color: var(--text-principal);
   border: none;
   padding: 8px 18px;
   font-size: 13px;
@@ -78,42 +78,42 @@ a:hover {
   justify-content: center;
   gap: 28px;
   padding: 12px 0;
-  background: #1a0506; /* Quase preto, para a barra de navegação */
-  border-bottom: 1px solid var(--border-wine);
+  background: #1a0506;
+  border-bottom: 1px solid var(--borda-vinho);
 }
 
 .main-nav a {
-  color: var(--text-muted);
+  color: var(--text-escuro);
   font-size: 13px;
   font-weight: 600;
 }
 
 .main-nav a:hover {
-  color: var(--text-main);
+  color: var(--text-principal);
 }
 
-/* ===== Trending bar ===== */
+/*Trending bar*/
 
 .trending-bar {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 12px 32px;
-  border-bottom: 1px solid var(--border-wine);
+  border-bottom: 1px solid var(--borda-vinho);
   font-size: 13px;
   overflow-x: auto;
   white-space: nowrap;
-  background: var(--bg-wine-light);
+  background: var(--bg-vinho-claro);
 }
 
 .trending-label {
-  color: var(--accent-red);
+  color: var(--accent-vermelho);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* ===== Content grid ===== */
+/*Content grid*/
 
 .content-grid {
   display: grid;
@@ -129,7 +129,7 @@ a:hover {
 .sidebar-tabs {
   display: flex;
   gap: 16px;
-  border-bottom: 2px solid var(--border-wine);
+  border-bottom: 2px solid var(--borda-vinho);
   margin-bottom: 12px;
 }
 
@@ -137,13 +137,13 @@ a:hover {
   font-size: 13px;
   font-weight: bold;
   padding-bottom: 8px;
-  color: var(--text-muted);
+  color: var(--text-escuro);
   cursor: pointer;
 }
 
 .tab.active {
-  color: var(--text-main);
-  border-bottom: 2px solid var(--accent-red);
+  color: var(--text-principal);
+  border-bottom: 2px solid var(--accent-vermelho);
 }
 
 .popular-list {
@@ -154,20 +154,20 @@ a:hover {
   display: flex;
   gap: 10px;
   padding: 10px 0;
-  border-bottom: 1px solid var(--border-wine);
+  border-bottom: 1px solid var(--borda-vinho);
 }
 
 .rank {
   font-family: var(--font-serif);
   font-weight: bold;
-  color: var(--accent-red);
+  color: var(--accent-vermelho);
   font-size: 16px;
 }
 
 .popular-title {
   font-size: 13px;
   line-height: 1.4;
-  color: var(--text-main);
+  color: var(--text-principal);
 }
 
 /* Featured story */
@@ -177,7 +177,7 @@ a:hover {
   background: #1a0506;
   margin-bottom: 14px;
   overflow: hidden;
-  border: 1px solid var(--border-wine);
+  border: 1px solid var(--borda-vinho);
 }
 
 .featured-image img {
@@ -190,7 +190,7 @@ a:hover {
 .eyebrow {
   font-size: 12px;
   font-weight: bold;
-  color: var(--accent-red);
+  color: var(--accent-vermelho);
   margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -201,24 +201,40 @@ a:hover {
   font-size: 34px;
   line-height: 1.15;
   margin-bottom: 12px;
-  color: var(--text-main);
+  color: var(--text-principal);
+}
+
+.featured-story h2 {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: var(--text-principal);
+}
+
+.featured-story h3 {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: var(--text-principal);
 }
 
 .deck {
   font-family: var(--font-serif);
   font-size: 17px;
-  color: var(--text-muted);
+  color: var(--text-escuro);
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-/* === PARÁGRAFOS GERAIS DO ARTIGO === */
+/*PARÁGRAFOS GERAIS DO ARTIGO*/
 
 .featured-story p {
   font-family: var(--font-serif);
   font-size: 17px;
   line-height: 1.7;
-  color: var(--text-main);
+  color: var(--text-principal);
   margin-bottom: 16px;
 }
 
@@ -232,13 +248,13 @@ a:hover {
   aspect-ratio: 16 / 9;
   background: #1a0506;
   margin-bottom: 10px;
-  border: 1px solid var(--border-wine);
+  border: 1px solid var(--borda-vinho);
 }
 
 .category {
   font-size: 11px;
   font-weight: bold;
-  color: var(--accent-red);
+  color: var(--accent-vermelho);
   margin-bottom: 4px;
   text-transform: uppercase;
 }
@@ -248,43 +264,21 @@ a:hover {
   font-size: 17px;
   line-height: 1.3;
   margin-bottom: 6px;
-  color: var(--text-main);
+  color: var(--text-principal);
 }
 
 .byline {
   font-size: 12px;
-  color: var(--text-muted);
+  color: var(--text-escuro);
 }
 
-/* ===== Footer ===== */
+/*Footer*/
 
 .site-footer {
-  border-top: 1px solid var(--border-wine);
+  border-top: 1px solid var(--borda-vinho);
   padding: 20px 32px;
   text-align: center;
   font-size: 12px;
-  color: var(--text-muted);
+  color: var(--text-escuro);
   background: #1a0506;
-}
-
-/* ===== Responsive ===== */
-
-@media (max-width: 900px) {
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .featured-story h1 {
-    font-size: 26px;
-  }
-
-  .featured-story p,
-  .deck {
-    font-size: 15px;
-  }
 }
