@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CineHouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -53,13 +57,14 @@
       </ol>
     </aside>
 
-    <!--Artigos Principais-->
+    <!-- Artigos Principais -->
     <div class="main-content">
       <article class="featured-story">
         <a href="../noticias/Panico7.html">
-          <div class="featured-image">
-            <img src="../noticias/panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
-          </div>
+          <figure class="featured-media">
+            <img src="../cartazes/panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
+            <figcaption class="media-caption">Paramount Pictures / Divulgação</figcaption>
+          </figure>
         </a>
         <p class="eyebrow">Críticas</p>
         <h1><a href="../noticias/Panico7.html">Pânico 7: A Franquia Perde o Rumo e Entra na Lista de Piores de 2026</a></h1>
@@ -68,9 +73,10 @@
 
       <article class="featured-story">
         <a href="../noticias/Supergirl.html">
-          <div class="featured-image">
-            <img src="../noticias/supergirl.jpg" alt="Capa do filme com a atriz Milly Alcock">
-          </div>
+          <figure class="featured-media">
+            <img src="../cartazes/supergirl.jpg" alt="Capa do filme com a atriz Milly Alcock">
+            <figcaption class="media-caption">Warner Bros. Discovery / Divulgação</figcaption>
+          </figure>
         </a>
         <p class="eyebrow">Críticas</p>
         <h2><a href="../noticias/Supergirl.html">Supergirl: A avalanche de reclamações da DC</a></h2>
@@ -78,16 +84,22 @@
       </article>
     </div>
 
-    <!-- ARTIGOS Da Direita -->
+    <!-- Artigos da Direita -->
     <aside class="sidebar-right">
       <div class="secondary-story">
-        <div class="secondary-image"></div>
+        <figure class="secondary-media">
+          <div class="secondary-image-placeholder"></div>
+          <figcaption class="media-caption">Créditos da imagem</figcaption>
+        </figure>
         <p class="category">Terror</p>
         <h3><a href="#">Título da notícia secundária um</a></h3>
         <p class="byline">Por Nome do Autor</p>
       </div>
       <div class="secondary-story">
-        <div class="secondary-image"></div>
+        <figure class="secondary-media">
+          <div class="secondary-image-placeholder"></div>
+          <figcaption class="media-caption">Créditos da imagem</figcaption>
+        </figure>
         <p class="category">Animação</p>
         <h3><a href="#">Título da notícia secundária dois</a></h3>
         <p class="byline">Por Nome do Autor</p>

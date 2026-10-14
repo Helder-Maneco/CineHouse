@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pânico 7: A Franquia Perde o Rumo | CineHouse</title>
+    
+    <!-- Importando fontes estilo Forbes/Editorial (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -33,9 +39,10 @@
             <div class="sidebar-tabs">
                 <span class="tab">Populares</span>
                 <span class="tab active">Últimas</span>
+
             </div>
             <ul class="popular-list">
-                <li><span class="rank">1</span><span class="popular-title">Supergirl: A avalanche de reclamações da DC</span></li>
+	      <li><span class="rank">1</span><a href="../noticias/Supergirl.html" class="popular-title">Supergirl: A avalanche de reclamações da DC</a></li>
                 <li><span class="rank">2</span><span class="popular-title">Os Estranhos: Capítulo Final escrachado pela crítica</span></li>
                 <li><span class="rank">3</span><span class="popular-title">Todo Mundo em Pânico 6 tropeça em piadas clichês</span></li>
             </ul>
@@ -43,15 +50,18 @@
 
         <!-- CONTEÚDO CENTRAL -->
         <article class="featured-story">
-            <div class="featured-image"> 
-                <img src="panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
-            </div>
             
-            <div class="eyebrow">Críticas</div>
+            <!-- Imagem principal convertida para <figure> e <figcaption> -->
+            <figure class="featured-media"> 
+                <img src="../cartazes/panico-7.jpg" alt="Capa do filme Pânico 7 com a máscara Ghostface e elenco principal">
+                <figcaption class="media-caption">Paramount Pictures / Divulgação</figcaption>
+            </figure>
+            
+            <p class="eyebrow">Críticas</p>
             <h1>Pânico 7: A Franquia Perde o Rumo e Entra na Lista de Piores de 2026</h1>
             <p class="deck">Apesar de ter batido recordes de bilheteria, a nova sequência de Kevin Williamson é considerada fraquíssima, com um vínculo forçado entre mãe e filha e notas baixíssimas nos agregadores.</p>
             
-            <div style="margin-top: 20px; line-height: 1.6; color: var(--black);">
+            <div>
                 <p>O filme anterior já dava indícios de que a história em Woodsboro não tinha muito para onde ir. A nova sequência crava exatamente esse ponto crucial: <em>Pânico 7</em> não traz inovação para o slasher e tenta forçar uma dinâmica familiar que simplesmente não funciona.</p>
                 <p>Apesar da péssima receção, o longa consolidou-se como a maior bilheteria de toda a franquia, provando que o sucesso comercial nem sempre reflete a qualidade artística.</p>
                 <p><strong>Letterboxd:</strong> 2.2 | <strong>Rotten Tomatoes:</strong> 29%</p>
@@ -61,16 +71,23 @@
         <!-- SIDEBAR DIREITA -->
         <aside class="sidebar-right">
             <div class="secondary-story">
-                <div class="secondary-image"></div>
-                <div class="category">Terror</div>
+                <figure class="secondary-media">
+                    <div class="secondary-image-placeholder"></div>
+                    <figcaption class="media-caption">Foto: Divulgação</figcaption>
+                </figure>
+                <p class="category">Terror</p>
                 <h3><a href="#">Terror em Silent Hill: Regresso para o Inferno destrói legado do jogo</a></h3>
-                <div class="byline">Por Redação</div>
+                <p class="byline">Por Redação</p>
             </div>
+            
             <div class="secondary-story">
-                <div class="secondary-image"></div>
-                <div class="category">Animação</div>
+                <figure class="secondary-media">
+                    <div class="secondary-image-placeholder"></div>
+                    <figcaption class="media-caption">Foto: Divulgação</figcaption>
+                </figure>
+                <p class="category">Animação</p>
                 <h3><a href="#">A Revolução dos Bichos: Sátira política vira bagunça infantil</a></h3>
-                <div class="byline">Por Redação</div>
+                <p class="byline">Por Redação</p>
             </div>
         </aside>
 
