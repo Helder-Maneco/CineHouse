@@ -8,11 +8,12 @@
   --accent-vermelho: #e63946;    /* Vermelho mais vivo para destaques*/
 
   --font-logo: 'Cinzel', Georgia, serif;
-  --font-serif: 'Lora', Georgia, serif;
+  /* Trocado para Playfair Display (estilo revista/Forbes de alto impacto) */
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -55,7 +56,7 @@ a:hover {
 }
 
 .logo {
-  font-family: var(--font-logo);
+  font-family: var(--font-logo) !important;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -109,6 +110,10 @@ a:hover {
   overflow-x: auto;
   white-space: nowrap;
   background: var(--bg-vinho-claro);
+}
+
+.trending-bar a {
+  font-family: var(--font-sans);
 }
 
 .trending-label {
@@ -168,13 +173,14 @@ a:hover {
 }
 
 .rank {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif) !important;
   font-weight: bold;
   color: var(--accent-vermelho);
   font-size: 16px;
 }
 
 .popular-title {
+  font-family: var(--font-sans);
   font-size: 13px;
   line-height: 1.4;
   color: var(--text-principal);
@@ -226,7 +232,7 @@ figure.secondary-media {
 .featured-story h1,
 .featured-story h2,
 .featured-story h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif) !important;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
@@ -235,8 +241,15 @@ figure.secondary-media {
   color: var(--text-principal);
 }
 
+.featured-story h1 a, 
+.featured-story h2 a, 
+.featured-story h3 a {
+  font-family: var(--font-serif) !important;
+  color: var(--text-principal);
+}
+
 .deck {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif) !important;
   font-size: 18px;
   font-weight: 400;
   color: var(--text-escuro);
@@ -247,7 +260,7 @@ figure.secondary-media {
 /* Parágrafos do Artigo */
 
 .featured-story p:not(.eyebrow):not(.deck) {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif) !important;
   font-size: 17px;
   line-height: 1.7;
   color: var(--text-principal);
@@ -271,7 +284,7 @@ figure.secondary-media {
 }
 
 .secondary-story h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif) !important;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.35;
@@ -279,7 +292,13 @@ figure.secondary-media {
   color: var(--text-principal);
 }
 
+.secondary-story h3 a {
+  font-family: var(--font-serif) !important;
+  color: var(--text-principal);
+}
+
 .byline {
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--text-escuro);
 }
