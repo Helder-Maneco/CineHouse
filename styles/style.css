@@ -6,7 +6,7 @@
   --text-escuro: #b0a8a9;    /* Cinza avermelhado para textos secundários */
   --borda-vinho: #5c1a1e;   /* Cor das linhas de baixo*/
   --accent-vermelho: #e63946;    /* Vermelho mais vivo para destaques*/
-  
+
   --font-logo: 'Cinzel', Georgia, serif;
   /* Trocado para Playfair Display (estilo revista/Forbes de alto impacto) */
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -22,7 +22,7 @@
 body {
   font-family: var(--font-sans);
   color: var(--text-principal);
-  background: var(--bg-vinho); 
+  background: var(--bg-vinho);
 }
 
 a {
@@ -229,8 +229,8 @@ figure.secondary-media {
   letter-spacing: 1.5px;
 }
 
-.featured-story h1, 
-.featured-story h2, 
+.featured-story h1,
+.featured-story h2,
 .featured-story h3 {
   font-family: var(--font-serif) !important;
   font-size: 32px;
@@ -313,28 +313,77 @@ figure.secondary-media {
   color: var(--text-escuro);
   background: #1a0506;
 }
+/* Página de listagem (Críticas) */
 
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/playfair-display-latin-700.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+.main-nav a.active {
+  color: var(--text-principal);
+  border-bottom: 2px solid var(--accent-vermelho);
 }
 
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/playfair-display-latin-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.page-single {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 32px;
 }
 
-@font-face {
-  font-family: 'Cinzel';
-  src: url('../fonts/cinzel-latin-700.woff2') format('woff2');
+.page-title {
+  font-family: var(--font-serif);
+  font-size: 36px;
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text-escuro);
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid var(--borda-vinho);
+}
+
+.review-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--borda-vinho);
+}
+
+.review-thumb {
+  border-bottom: none;
+}
+
+.review-thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--borda-vinho);
+  background: #1a0506;
+}
+
+.review-body h2 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.review-body .deck {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.review-ratings {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-escuro);
+}
+
+@media (max-width: 700px) {
+  .review-card {
+    grid-template-columns: 1fr;
+  }
 }
