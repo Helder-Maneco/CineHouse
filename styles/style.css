@@ -77,15 +77,14 @@ a:hover {
 
 .main-nav {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 28px;
-  padding: 12px 0;
-  background: #1a0506;
-  border-bottom: 1px solid var(--borda-vinho);
+  padding: 12px 220px 12px 0; /* O 220px na direita afasta os links da borda */
+  background: #000000;
+  border-bottom: 1px solid var(--borda-vinho); /* Devolve a linha vermelha escura */
 }
-
 .main-nav a {
-  color: var(--text-escuro);
+  color: #FFFFFF;
   font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 600;
@@ -367,4 +366,21 @@ figure.secondary-media {
   .review-card {
     grid-template-columns: 1fr;
   }
+}
+
+/* Mídias e Imagens (figure / figcaption) */
+
+figure.featured-media,
+figure.secondary-media {
+  margin: 0 0 14px 0;
+}
+
+.featured-media img,
+.secondary-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--borda-vinho);
+  background: #1a0506;
 }
